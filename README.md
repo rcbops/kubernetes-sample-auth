@@ -1,2 +1,3 @@
 # sample-auth
-sample auth providers for testing enterprise auth integration
+
+sample auth providers for testing enterprise auth integrations

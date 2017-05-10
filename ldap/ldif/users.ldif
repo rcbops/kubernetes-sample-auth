@@ -1,0 +1,95 @@
+# Entry 1: ou=People,{DOMAIN}
+# dn: ou=People,{DOMAIN}
+# objectclass: top
+# objectclass: organizationalUnit
+# ou: People
+
+# Entry 2: cn=Anthony Test,ou=People,{DOMAIN}
+dn: cn=Anthony Test,ou=People,{DOMAIN}
+cn: Anthony Test
+gidnumber: 5000
+givenname: Anthony
+homedirectory: /home/users/anthony@example.com
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Test
+uid: anthony@example.com
+uidnumber: 1001
+userpassword: {SSHA}nj4zDcgqok45lFKIeSwCGX7ze/OYDGLg
+
+# Entry 3: cn=Evelyn Test,ou=People,{DOMAIN}
+dn: cn=Evelyn Test,ou=People,{DOMAIN}
+cn: Evelyn Test
+gidnumber: 5000
+givenname: Evelyn
+homedirectory: /home/users/evelyn@example.com
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Test
+uid: evelyn@example.com
+uidnumber: 1003
+userpassword: {SSHA}nj4zDcgqok45lFKIeSwCGX7ze/OYDGLg
+
+# Entry 4: cn=James Test,ou=People,{DOMAIN}
+dn: cn=James Test,ou=People,{DOMAIN}
+cn: James Test
+gidnumber: 5000
+givenname: James
+homedirectory: /home/users/james@example.com
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Test
+uid: james@example.com
+uidnumber: 1005
+userpassword: {SSHA}nj4zDcgqok45lFKIeSwCGX7ze/OYDGLg
+
+# Entry 5: cn=Joseph Test,ou=People,{DOMAIN}
+dn: cn=Joseph Test,ou=People,{DOMAIN}
+cn: Joseph Test
+gidnumber: 5000
+givenname: Joseph
+homedirectory: /home/users/joseph@example.com
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Test
+uid: joseph@example.com
+uidnumber: 1004
+userpassword: {SSHA}nj4zDcgqok45lFKIeSwCGX7ze/OYDGLg
+
+# Entry 6: cn=Lisa Test,ou=People,{DOMAIN}
+dn: cn=Lisa Test,ou=People,{DOMAIN}
+cn: Lisa Test
+gidnumber: 5000
+givenname: Lisa
+homedirectory: /home/users/lisa@example.com
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Test
+uid: lisa@example.com
+uidnumber: 1002
+userpassword: {SSHA}nj4zDcgqok45lFKIeSwCGX7ze/OYDGLg
+
+# Entry 7: cn=Stephen Test,ou=People,{DOMAIN}
+dn: cn=Stephen Test,ou=People,{DOMAIN}
+cn: Stephen Test
+gidnumber: 5000
+givenname: Stephen
+homedirectory: /home/users/stephen@example.com
+loginshell: /bin/sh
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Test
+uid: stephen@example.com
+uidnumber: 1000
+userpassword: {SSHA}nj4zDcgqok45lFKIeSwCGX7ze/OYDGLg

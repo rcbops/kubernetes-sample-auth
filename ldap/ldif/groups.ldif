@@ -1,0 +1,53 @@
+# Entry 1: ou=Groups,{DOMAIN}
+# dn: ou=Groups,{DOMAIN}
+# objectclass: top
+# objectclass: organizationalUnit
+# ou: Groups
+
+# Entry 2: cn=Admins,ou=Groups,{DOMAIN}
+dn: cn=Admins,ou=Groups,{DOMAIN}
+cn: Admins
+gidnumber: 5001
+memberuid: stephen@example.com
+objectclass: posixGroup
+objectclass: top
+
+# Entry 3: cn=Contractors,ou=Groups,{DOMAIN}
+dn: cn=Contractors,ou=Groups,{DOMAIN}
+cn: Contractors
+gidnumber: 5004
+memberuid: joseph@example.com
+objectclass: posixGroup
+objectclass: top
+
+# Entry 4: cn=Project One Devs,ou=Groups,{DOMAIN}
+dn: cn=Project One Devs,ou=Groups,{DOMAIN}
+cn: Project One Devs
+gidnumber: 5002
+memberuid: lisa@example.com
+memberuid: joseph@example.com
+memberuid: evelyn@example.com
+objectclass: posixGroup
+objectclass: top
+
+# Entry 5: cn=Project Two Devs,ou=Groups,{DOMAIN}
+dn: cn=Project Two Devs,ou=Groups,{DOMAIN}
+cn: Project Two Devs
+gidnumber: 5003
+memberuid: evelyn@example.com
+objectclass: posixGroup
+objectclass: top
+
+# Entry 6: cn=Users,ou=Groups,{DOMAIN}
+dn: cn=Users,ou=Groups,{DOMAIN}
+cn: Users
+gidnumber: 5000
+memberuid: evelyn@example.com
+memberuid: james@example.com
+memberuid: anthony@example.com
+memberuid: joseph@example.com
+memberuid: lisa@example.com
+memberuid: stephen@example.com
+memberuid: admin
+objectclass: posixGroup
+objectclass: top
