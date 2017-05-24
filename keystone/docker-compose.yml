@@ -1,0 +1,44 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=keystone
+    volumes:
+      - ./keystone.sql:/docker-entrypoint-initdb.d/keystone.sql
+    deploy: 
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+  keystone-public:
+    image: kolla/ubuntu-binary-keystone:3.0.3
+    command: keystone-wsgi-public
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./keystone.conf:/etc/keystone/keystone.conf
+    environment:
+      - OS_USERNAME=admin
+      - OS_PASSWORD=password
+      - OS_PROJECT_NAME=admin
+      - OS_USER_DOMAIN_NAME=Default
+      - OS_PROJECT_DOMAIN_NAME=Default
+      - OS_AUTH_URL=http://keystone-admin:8000/v3
+      - OS_IDENTITY_API_VERSION=3
+    deploy: 
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+  keystone-admin:
+    image: kolla/ubuntu-binary-keystone:3.0.3
+    command: keystone-wsgi-admin
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./keystone.conf:/etc/keystone/keystone.conf
+    deploy: 
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
