@@ -727,6 +727,7 @@ LOCK TABLES `assignment` WRITE;
 INSERT INTO `assignment` VALUES ('UserDomain','204bd3374f9148449dad1ce3e2f9d21b','default','7122c017e92f43b6af8e7325ae30cbc1',0);
 INSERT INTO `assignment` VALUES ('UserDomain','204bd3374f9148449dad1ce3e2f9d21b','default','c82491c029dd48a6b58c029f3ee38c0e',0);
 INSERT INTO `assignment` VALUES ('UserProject','4556055ad267437b877db68c176a67d2','f7de6b3052fc462e8d63b6a978c228b5','d9341a1347964a5890b194af6bb8f1d6',0);
+INSERT INTO `assignment` VALUES ('UserProject','bb615c9c41c945738569d55c373fcc35','0372a7b8d40b4a6e90b91b245fb572e3','4f62c83241774ef59d7b076b34e49ac5',0);
 INSERT INTO `assignment` VALUES ('UserDomain','bb615c9c41c945738569d55c373fcc35','default','4f62c83241774ef59d7b076b34e49ac5',0);
 INSERT INTO `assignment` VALUES ('UserDomain','bb615c9c41c945738569d55c373fcc35','default','f6120fe6406a473682c3b25cdea4519c',0);
 INSERT INTO `assignment` VALUES ('UserDomain','dee714cf256046609a3b7f9d235764ca','default','6deaae8411934899ab497498c0a36202',0);
